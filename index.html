@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Java Script</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="task1">
+        <h1>Task 1</h1>
+        <p>
+          Создать на странице div, указать ему id, сделать ему такие стили, чтоб
+          он выглядел как черный квадрат 100х100 пх. Добавить на страницу
+          кнопку, по клику на эту кнопку блок должен исчезать. исчезание нужно
+          сделать всеми тремя способами (отдельная кнопка под каждый способ):
+          <br />
+          1. CSS (display: none), т.е. просто навесить стиль на элемент <br />
+          2. JS (удаление элемента) <br />
+          3. CSS+JS (навешивать на элемент класс hidden, а в CSS прописать такие
+          стили чтоб они скрывали всё с классом hidden)
+        </p>
+        <button id="css-btn">CSS</button>
+        <button id="js-btn">JS</button>
+        <button id="css-js-btn">CSS + JS</button>
+        <div class="square" id="square1"></div>
+      </div>
+      <div class="task2">
+        <h1>Task 2</h1>
+        <p>
+          Сделать так, чтоб по клику на кнопку блок исчезал, если он есть, и
+          чтоб появлялся, если он был скрыт (способ CSS+JS).
+        </p>
+        <button id="delete2">Delete</button>
+        <div class="square" id="square2"></div>
+      </div>
+      <div class="task3">
+        <h1>Task 3</h1>
+        <p>
+          Сделать на странице 5 таких блоков, дать им всем одинаковый класс,
+          благодаря которому они все станут выглядеть как черные квадраты.
+          Сделать так чтоб они все одновременно скрывались/появлялись по нажатию
+          на кнопку.
+        </p>
+        <button id="delete3">Hide</button>
+        <div class="five-squares">
+          <div class="square square3"></div>
+          <div class="square square3"></div>
+          <div class="square square3"></div>
+          <div class="square square3"></div>
+          <div class="square square3"></div>
+        </div>
+      </div>
+      <div class="task4">
+        <h1>Task 4</h1>
+        <p>
+          Добавить на страницу инпут, в который можно ввести css selector (query
+          selector) и при нажатии на кнопку будут скрываться/появляться те
+          элементы, которые соответствуют этому селектору.
+        </p>
+        <input type="text" value="#1" id="input4" />
+        <button id="delete4">Delete</button>
+        <div class="five-squares">
+          <div class="square" id="#1">#1</div>
+          <div class="square" id="#2">#2</div>
+          <div class="square" id="#3">#3</div>
+          <div class="square" id="#4">#4</div>
+          <div class="square" id="#5">#5</div>
+        </div>
+      </div>
+      <div class="task5">
+        <h1>Task 5</h1>
+        <p>
+          Добавить на страницу желтый квадрат, и сделать так чтоб при нажатии на
+          него в первый раз выводилась надпись "Привет" (alert), а при втором
+          нажатии этот квадрат пропадал. (нужно менять функцию обработчик,
+          удалять первую и ставить вторую)
+        </p>
+        <div class="square" id="square5"></div>
+      </div>
+      <div class="task6">
+        <h1>Task 6</h1>
+        <p>
+          Добавить на страницу красный квадрат 50х50 пх, который будет
+          появляться как только человек наводит курсор на кнопку, и скрываться
+          как только человек убирает курсор с кнопки
+        </p>
+        <button id="show5">Show</button>
+        <div id="redSquare"></div>
+      </div>
+      <div class="task7">
+        <h1>Task 7</h1>
+        <p>
+          Добавить на страницу зеленый прямоугольник 50х20 пх, который будет
+          появляться как только человек фокусируется на инпуте и исчезать как
+          только человек начинает писать текст в этот инпут.
+        </p>
+        <input type="text" id="input7" />
+        <div id="greenRect"></div>
+      </div>
+      <div class="task8">
+        <h1>Task 8</h1>
+        <p>
+          Добавить на страницу инпут и кнопку. Если в инпут положить ссылку, и
+          нажать на кнопку то на странице появится картинка полученная по
+          ссылке, которую ввели в инпут.
+        </p>
+        <input
+          type="text"
+          id="input8"
+          value="https://i.pinimg.com/736x/63/7b/f9/637bf9819dace179e4c2a71fea0d0356--tree-clipart-art-images.jpg"
+        />
+        <button id="btn8">Confirm</button>
+        <div>
+          <img src="" alt="" id="image8" />
+        </div>
+      </div>
+      <div class="task9">
+        <h1>Task 9</h1>
+        <p>
+          Превратить инпут в textarea, в которую можно вводить ссылки, каждую с
+          новой строчки. При нажатии на кнопку на странице появится столько
+          картинок, сколько ссылок ввели в textarea (картинки берутся по
+          ссылкам).
+        </p>
+        <div class="textarea9">
+          <textarea name="" id="input9" cols="30" rows="10">
+            https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzb18os86e_77fKz7IpUZWcDdh2a7CZgdn0w&usqp=CAU
+            https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnO8J2QqcjqircfGPXOqobRef9HGT_T-Bkxw&usqp=CAU
+            https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTon19FjPVgZ_V0ZHVwMIjPOtO4MxckNBn7J2BFa-tKOaumzjVN5dix85MyKwlThFMiYMw&usqp=CAU
+          </textarea>
+          <button id="btn9">Confirm</button>
+        </div>
+        <div class="show-images"></div>
+      </div>
+      <div class="task10">
+        <h1>Task 10</h1>
+        <p>
+          Сделать блок в правом верхнем углу страницы, в котором в формате "Х:
+          123, У: 984" будут выводиться координаты курсора (обновляться в
+          риалтайме)
+        </p>
+      </div>
+      <div class="task11">
+        <h1>Task 11</h1>
+        <p>
+          Добавить в блок в правом верхнем углу информацию о том какой язык
+          выбран в браузере у пользователя
+        </p>
+      </div>
+      <div class="task12">
+        <h1>Task 12</h1>
+        <p>
+          Добавить в блок в правом верхнем углу отображение широты и долготы на
+          которой находится человек (формат: "Ш: 34.23234, Д: 78.239482034").
+        </p>
+        <div class="coordinates">
+          <p id="mouse-coord"></p>
+          <p id="language"></p>
+          <p id="location">Longitude: Latitude:</p>
+        </div>
+      </div>
+      <div class="task13">
+        <h1>Task 13</h1>
+        <p>
+          Добавить на страницу три блока и сделать текст внутри них
+          редактируемым, как в инпуте (но чтоб это был не нативный инпут). То,
+          что человек введет в эти "инпуты" должно в них и оставаться при
+          перезагрузке страницы (onload событие). <br />для первого использовать
+          localStorage<br />
+          для второго использовать cookies<br />
+          для третьего использовать sessionStorage<br />
+          Загуглите в чем разница между этими способами.
+        </p>
+        <div class="title">
+          <div>Local Storage</div>
+          <div>Cookies</div>
+          <div>Session Storage</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

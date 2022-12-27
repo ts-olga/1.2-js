@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  width: 165px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  background-color: black;
+}
+
+.five-squares {
+  display: flex;
+  color: white;
+}
+
+input {
+  height: 25px;
+}
+
+#square5 {
+  background-color: yellow;
+}
+
+#redSquare {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  margin: 40px auto;
+  display: none;
+}
+
+#greenRect {
+  background-color: green;
+  width: 50px;
+  height: 20px;
+  margin: 40px auto;
+  display: none;
+}
+
+img {
+  max-width: 300px;
+}
+
+.textarea9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coordinates {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 250px;
+  height: 130px;
+  background-color: beige;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 20px auto;
+}
