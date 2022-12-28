@@ -108,10 +108,45 @@ let selectedLanguage = navigator.language;
 document.getElementById("language").innerHTML = `Language: ${selectedLanguage}`;
 
 //Task 12
-// navigator.geolocation.getCurrentPosition(function (position) {
-//   document.getElementById(
-//     "location"
-//   ).innerHTML = `Longitude: ${position.coords.longitude}, Latitude: ${position.coords.latitude}`;
-// });
+navigator.geolocation.getCurrentPosition(function (position) {
+  document.getElementById(
+    "location"
+  ).innerHTML = `Longitude: ${position.coords.longitude}, Latitude: ${position.coords.latitude}`;
+});
 
-// Task 13
+//Task 13
+document.getElementById("input1").addEventListener("input", function () {
+  localStorage.setItem(
+    "localStorage",
+    document.getElementById("input1").innerHTML
+  );
+});
+
+document.getElementById("input2").addEventListener("input", function () {
+  document.cookie = `cookie= ${document.getElementById("input2").innerHTML}`;
+});
+
+document.getElementById("input3").addEventListener("input", function () {
+  sessionStorage.setItem(
+    "sessionStorage",
+    document.getElementById("input3").innerHTML
+  );
+});
+
+onload = loadInput();
+
+function loadInput() {
+  document.getElementById("input1").innerHTML =
+    localStorage.getItem("localStorage");
+
+  let cookieInfo = document.cookie.split(";");
+
+  for (let i = 0; i < cookieInfo.length; i++) {
+    if (cookieInfo[i].includes("cookie=")) {
+      document.getElementById("input2").innerHTML = cookieInfo[i].split("=")[1];
+    }
+  }
+
+  document.getElementById("input3").innerHTML =
+    sessionStorage.getItem("sessionStorage");
+}
