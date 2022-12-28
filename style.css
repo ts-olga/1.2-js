@@ -85,3 +85,54 @@ img {
   border: 1px solid gray;
   border-radius: 3px;
 }
+
+#top-btn {
+  display: none;
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  background-color: rgb(99, 108, 154);
+  border: 1px solid rgb(99, 108, 154);
+  color: white;
+  border-radius: 3px;
+}
+
+#top-btn:hover {
+  background-color: rgb(133, 141, 183);
+}
+
+.big-square {
+  display: flex;
+  background-color: darkslategrey;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.small-square {
+  background-color: powderblue;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+}
+
+.small-square:hover {
+  background-color: rgb(123, 209, 220);
+  cursor: pointer;
+}
+
+.grey-square {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.268);
+}
+
+.task17 form {
+  margin-bottom: 20px;
+}

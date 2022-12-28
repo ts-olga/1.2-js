@@ -2,9 +2,11 @@
 document.getElementById("css-btn").addEventListener("click", function () {
   document.getElementById("square1").style.display = "none";
 });
+
 document.getElementById("js-btn").addEventListener("click", function () {
   document.getElementById("square1").remove();
 });
+
 document.getElementById("css-js-btn").addEventListener("click", function () {
   document.getElementById("square1").style.visibility = "hidden";
 });
@@ -134,7 +136,6 @@ document.getElementById("input3").addEventListener("input", function () {
 });
 
 onload = loadInput();
-
 function loadInput() {
   document.getElementById("input1").innerHTML =
     localStorage.getItem("localStorage");
@@ -150,3 +151,54 @@ function loadInput() {
   document.getElementById("input3").innerHTML =
     sessionStorage.getItem("sessionStorage");
 }
+
+// Task 14
+let topBtn = document.getElementById("top-btn");
+
+window.onscroll = scrollFunction;
+function scrollFunction() {
+  if (
+    window.pageYOffset + innerHeight ===
+    document.documentElement.scrollHeight
+  ) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+topBtn.addEventListener("click", function () {
+  document.documentElement.scrollTop = 0;
+});
+// добавить плавный переход наверх
+
+// Task 15
+document
+  .querySelector(".small-square")
+  .addEventListener("click", function (event) {
+    alert("It's a small square!");
+    event.stopPropagation();
+  });
+
+document.querySelector(".big-square").addEventListener("click", function () {
+  alert("It's a big square!");
+});
+
+// Task 16
+let greySquareBtn = document.getElementById("btn16");
+greySquareBtn.addEventListener("click", function () {
+  document.querySelector(".grey-square").style.display = "block";
+  document.body.style.overflow = "hidden";
+});
+
+document.querySelector(".grey-square").addEventListener("click", function () {
+  document.querySelector(".grey-square").style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+// Task 17
+document.getElementById("go-btn").addEventListener("click", function (event) {
+  event.preventDefault();
+});
+
+// Task 18
