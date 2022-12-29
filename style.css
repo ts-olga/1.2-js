@@ -136,3 +136,40 @@ img {
 .task17 form {
   margin-bottom: 20px;
 }
+.task18 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.file-input {
+  height: 1px;
+  opacity: 0;
+}
+
+.input-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+}
+
+.input-label:hover {
+  opacity: 0.8;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}

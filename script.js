@@ -202,3 +202,13 @@ document.getElementById("go-btn").addEventListener("click", function (event) {
 });
 
 // Task 18
+let dropArea = document.getElementById("input18");
+
+dropArea.addEventListener("dragenter", function (e) {
+  e.preventDefault();
+  document.querySelector(".input-label").style.border = "5px dashed green";
+});
+
+dropArea.addEventListener("change", function () {
+  document.querySelector(".input-label").style.border = "8px dotted purple";
+});
