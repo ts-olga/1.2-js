@@ -170,7 +170,6 @@ function scrollFunction() {
 topBtn.addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
 });
-// добавить плавный переход наверх
 
 // Task 15
 document
